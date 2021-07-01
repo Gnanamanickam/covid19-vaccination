@@ -1,1 +1,3 @@
-# covid19-vaccination
+#Description
+
+A user is signed into the portal and has a unique ID like (SSN), name, location and a phone number. Each county or a district has different vaccination centers each of which has a unique ID, which records the track of people vaccinated, the dose of the vaccine and the stock of vaccination left. A person can get the vaccine from any center but has to get the same 2 doses of vaccine. Each vaccine has a unique number which can be used to track the person who has received the vaccine and the date they got the vaccine. There is also information about the type of vaccine and the possible side effects caused by the vaccine in each dose. Finally the user can see  the states or the counties which have the highest vaccinations received.
