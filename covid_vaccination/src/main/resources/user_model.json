@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "58478163-a89c-4e50-addb-c28f72d0f0fc",
+		"name": "user_model",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"ssn\": 234578,\r\n        \"name\": \"user1\",\r\n        \"phone_number\": 3456728901,\r\n        \"email\": \"abc@gmail.com\",\r\n        \"password\": \"Barcelonaa1\",\r\n        \"county\": \"cook\",\r\n        \"state\": \"Illinois\"\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"ssn\": 234578,\r\n        \"name\": \"user3\",\r\n        \"phone_number\": 3456728901,\r\n        \"email\": \"abc@gmail.com\",\r\n        \"password\": \"Barcelonaa1\",\r\n        \"county\": \"cook\",\r\n        \"state\": \"Illinois\"\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/user/{ssn}}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"234578"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/user/{ssn}",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"234578"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "56f39674-882a-408e-ae17-771531da4cd2",
+		"name": "vaccine_model",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read Vaccine",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/api/vaccine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Adding vaccine",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3324,\r\n    \"vaccine_name\":\"Moderna\",\r\n    \"doses\":2,\r\n    \"type\":\"type1\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/vaccine",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updating vaccine",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"id\":3321,\r\n    \"vaccine_name\":\"JJ\",\r\n    \"doses\":2,\r\n    \"type\":\"type1\"\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/vaccine/3321",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccine",
+						"3321"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleteing vaccine",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/vaccine/3321",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vaccine",
+						"3321"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

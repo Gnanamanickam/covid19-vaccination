@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "6b33401c-1b04-48dc-acca-f8a7b26a7093",
+		"name": "simple queries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "simple query 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/simple_query1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"simple_query1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "simple query 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/simple_query2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"simple_query2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "simple query 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/simple_query3/illinois",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"simple_query3",
+						"illinois"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

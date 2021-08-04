@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "dff471c8-f170-4ff9-99cd-591f70ce495a",
+		"name": "complex queries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Complex query 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/complex_query1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"complex_query1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complex query 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/stock/Pfizer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stock",
+						"Pfizer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complex query 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/complex_query3/06",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"complex_query3",
+						"06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Complex query 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/complex_query4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"complex_query4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "complex query 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/complex_query5/pfizer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"complex_query5",
+						"pfizer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
