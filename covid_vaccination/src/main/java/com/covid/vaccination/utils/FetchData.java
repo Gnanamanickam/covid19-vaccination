@@ -70,10 +70,9 @@ public class FetchData {
 		 return jsonArray;
 	}
 	
-	public JSONArray getDetails() {
+	public JSONArray getDetails(String query) {
 		JSONArray details = new JSONArray();
 		try {
-			String query = new String("");
 			Connection conn = (Connection) dataSource.getConnection();
 			details = fetchDataSet(query, conn);
 			conn.close();
